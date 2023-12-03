@@ -434,12 +434,6 @@ img {
     gap: 24px;
 }
 
-/* .subscribe-form-wrapper { 
-    display: flex;
-    justify-content: flex-end;
-    gap: 16px;
-}*/
-
 .subscribe-input {
     width: 264px;
     height: 40px;
@@ -479,6 +473,9 @@ img {
     padding: 8px 24px;
     background-color: #4D5AE5;
     color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1.5;
     border-radius: 4px;
     border: none;
     cursor: pointer;
@@ -686,12 +683,6 @@ img {
     border: none;
 }
 
-/* .contacts-form-checkbox:focus 
-+ .contacts-form-checkbox-label
-> .contacts-form-own-checkbox {
-    outline: 2px solid rgba(0, 0, 255, 0.5);
-}
-*/
 .contacts-form-own-checkbox-icon {
     fill: #ffffff;
     opacity: 0;
