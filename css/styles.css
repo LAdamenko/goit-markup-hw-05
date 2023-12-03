@@ -521,7 +521,11 @@ img {
     min-height: 584px;
     background-color: #FCFCFC;
     border-radius: 4px;
-    padding: 24px;
+    padding: 72px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 1px 3px rgba(0, 0, 0, 0.12),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn {
@@ -538,14 +542,20 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 50%;
     fill: #2E2F42;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
 }  
+
+.modal-close-btn-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
     fill: #FFFFFF;
     background-color: #404BBF;
+    border: none;
 }
 
 .leave-contacts-form-tytle {
@@ -555,6 +565,7 @@ img {
     width: 360px;
     text-align: center;
     margin-bottom: 16px;
+    color: #2E2F42;
 }
 
 .contacts-form-wrapper {
@@ -581,6 +592,7 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.40);
     border-radius: 4px;
     padding-left: 38px;
+    background-color: transparent;
     outline: 0px solid transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -602,6 +614,10 @@ img {
     fill: #4D5AE5;
 }
 
+.contacts-form-comment-wrapper {
+    margin-bottom: 16px;
+}
+
 .contacts-form-comment {
     width: 100%;
     height: 120px;
@@ -616,7 +632,7 @@ img {
     resize: none;
     outline: 0px solid transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 8px;
+    background-color: transparent;
 }
 
 .contacts-form-comment::placeholder {
@@ -649,6 +665,10 @@ img {
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-form-checkbox:checked
@@ -656,7 +676,7 @@ img {
 > .contacts-form-own-checkbox {
     background-color: #404BBF;
     fill: #F4F4FD;
-    border-color: #404BBF;
+    border: none;
 }
 
 /* .contacts-form-checkbox:focus 
